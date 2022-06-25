@@ -1,2 +1,3 @@
-# mysqlbasic
-mysqlbasic
+# Learn MySQL Basic
+
+
