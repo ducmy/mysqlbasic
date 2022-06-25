@@ -17,7 +17,21 @@ CREATE TABLE `users` (
 
 ## dump_data
 
-INSERT INTO db.users
+INSERT INTO db.photos
+(id, url, user_id)
+VALUES(1, 'http://img1.jpg', 4);
+INSERT INTO db.photos
+(id, url, user_id)
+VALUES(2, 'http://img2.jpg', 4);
+INSERT INTO db.photos
+(id, url, user_id)
+VALUES(3, 'http://img3.jpg', 1);
+INSERT INTO db.photos
+(id, url, user_id)
+VALUES(4, 'http://img4.jpg', 2);
+
+
+INSERT INTO users
 (id, username, email)
 VALUES(1, 'monaha93', 'emery.becker@yahoo.com');
 INSERT INTO db.users
@@ -30,15 +44,7 @@ INSERT INTO db.users
 (id, username, email)
 VALUES(4, 'sim3nonis', 'nedra1@yahoo.com');
 
-INSERT INTO db.users
-(id, username, email, `JSON_ARRAYAGG(photos.url)`)
-VALUES(1, 'monaha93', 'emery.becker@yahoo.com', '["http://img3.jpg"]');
-INSERT INTO db.users
-(id, username, email, `JSON_ARRAYAGG(photos.url)`)
-VALUES(2, 'pfeffer', 'lesly88@hotmail.com', '["http://img4.jpg"]');
-INSERT INTO db.users
-(id, username, email, `JSON_ARRAYAGG(photos.url)`)
-VALUES(4, 'sim3nonis', 'nedra1@yahoo.com', '["http://img1.jpg", "http://img2.jpg"]');
+
 
 
 
