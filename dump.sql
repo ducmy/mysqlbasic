@@ -17,32 +17,19 @@ CREATE TABLE `users` (
 
 ## dump_data
 
-INSERT INTO photos
-(id, url, user_id)
-VALUES(1, 'http://img1.jpg', 4);
-INSERT INTO db.photos
-(id, url, user_id)
-VALUES(2, 'http://img2.jpg', 4);
-INSERT INTO db.photos
-(id, url, user_id)
-VALUES(3, 'http://img3.jpg', 1);
-INSERT INTO db.photos
-(id, url, user_id)
-VALUES(4, 'http://img4.jpg', 2);
-
-
 INSERT INTO users
 (id, username, email)
-VALUES(1, 'monaha93', 'emery.becker@yahoo.com');
-INSERT INTO db.users
-(id, username, email)
-VALUES(2, 'pfeffer', 'lesly88@hotmail.com');
-INSERT INTO db.users
-(id, username, email)
-VALUES(3, '99stroman', 'blaze68@hotmail.com');
-INSERT INTO db.users
-(id, username, email)
-VALUES(4, 'sim3nonis', 'nedra1@yahoo.com');
+VALUES(1, 'monaha93', 'emery.becker@yahoo.com'),
+(2, 'pfeffer', 'lesly88@hotmail.com'),
+(3, '99stroman', 'blaze68@hotmail.com'),
+(4, 'sim3nonis', 'nedra1@yahoo.com');
+
+INSERT INTO photos
+(id, url, user_id)
+VALUES(1, 'http://img1.jpg', 4),
+(2, 'http://img2.jpg', 4),
+(3, 'http://img3.jpg', 1),
+(4, 'http://img4.jpg', 2);
 
 
 
