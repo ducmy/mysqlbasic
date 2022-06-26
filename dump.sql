@@ -17,7 +17,7 @@ CREATE TABLE `users` (
 
 ## dump_data
 
-INSERT INTO db.photos
+INSERT INTO photos
 (id, url, user_id)
 VALUES(1, 'http://img1.jpg', 4);
 INSERT INTO db.photos
